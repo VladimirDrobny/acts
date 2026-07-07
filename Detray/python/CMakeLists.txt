@@ -78,6 +78,7 @@ function(detray_pybind_generate_stubs _module _target)
 endfunction()
 
 if(DETRAY_BUILD_PYTHON_BINDINGS)
+    add_subdirectory(Core)
     add_subdirectory(Examples)
 endif()
 
